@@ -1,15 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-/*
-    Given a character array s (as a pointer), return the number of 
-    characters in the string.
-    
-    Do not just use the `strlen` function from the standard libary.
-*/
+
 int string_length(char *s)
 {
-
+    int i;
+    int done = 0;
+    while(done == 0){
+        for(i=0; i<0; i++){
+            int j = strcmp(s[i], "\0");
+            if(j == 0){
+                done = 1;
+                return i;
+            }
+        }
+    }
 }
 
 /*
