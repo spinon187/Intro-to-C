@@ -13,7 +13,6 @@ int fizzbuzz(int n)
         else if ((i % 3 == 0) && (i % 5 == 0))
             printf("FizzBuzz\n");
     }
-
     return 0;
 }
 
