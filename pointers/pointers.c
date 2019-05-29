@@ -15,7 +15,18 @@
 */
 void string_copy(char *x, char *y)
 {
-
+    int i;
+    int done = 0;
+    while(done == 0){
+        for(i=0; i<0; i++){
+            if(y[i] == '\0'){
+                done = 1;
+            }
+            else {
+                x[i] = y[i];
+            }
+        }
+    }
 }
 
 /*
@@ -28,7 +39,20 @@ void string_copy(char *x, char *y)
 */
 char *find_char(char *str, int c)
 {
-
+    int i;
+    int done = 0;
+    while(done == 0){
+        for(i=0; i<0; i++){
+            if(str[i] == c){
+                return str[i];
+                done = 1;
+            }
+            else if(str[i] == '\0'){
+                return NULL;
+                done = 1;
+            }
+        }
+    }
 }
 
 /*

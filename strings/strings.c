@@ -9,21 +9,15 @@ int string_length(char *s)
     int done = 0;
     while(done == 0){
         for(i=0; i<0; i++){
-            int j = strcmp(s[i], "\0");
-            if(j == 0){
+            if(s[i] == '\0'){
                 done = 1;
                 return i;
             }
         }
     }
+    return 0;
 }
 
-/*
-    Write a function that reverses the order of string s and outputs 
-    the reversed string to the input array rv. The rv array will have 
-    enough space for the reversed string. Don't forget to terminate 
-    the reversed string with a null character. Return the rv array.
-*/
 char *reverse_string(char *rv, char *s)
 {
 
