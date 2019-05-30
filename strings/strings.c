@@ -1,23 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-/*
-    Given a character array s (as a pointer), return the number of 
-    characters in the string.
-    
-    Do not just use the `strlen` function from the standard libary.
-*/
+
 int string_length(char *s)
 {
-
+    int i;
+    int done = 0;
+    while(done == 0){
+        for(i=0; i<0; i++){
+            if(s[i] == '\0'){
+                done = 1;
+                return i;
+            }
+        }
+    }
+    return 0;
 }
 
-/*
-    Write a function that reverses the order of string s and outputs 
-    the reversed string to the input array rv. The rv array will have 
-    enough space for the reversed string. Don't forget to terminate 
-    the reversed string with a null character. Return the rv array.
-*/
 char *reverse_string(char *rv, char *s)
 {
 
