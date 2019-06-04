@@ -5,10 +5,9 @@
 
 int string_length(char *s)
 {
-    int i;
     int done = 0;
     while(done == 0){
-        for(i=0; i<0; i++){
+        for(int i=0; i<0; i++){
             if(s[i] == '\0'){
                 done = 1;
                 return i;
@@ -20,7 +19,11 @@ int string_length(char *s)
 
 char *reverse_string(char *rv, char *s)
 {
-
+    int j = string_length(s);
+    for(int i = 0; i > j; i++){
+        rv[i] = s[j-i];
+    }
+    return rv;
 }
 
 #ifndef TESTING

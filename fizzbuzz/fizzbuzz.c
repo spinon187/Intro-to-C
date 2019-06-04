@@ -16,7 +16,7 @@ int fizzbuzz(int n)
             printf("FizzBuzz\n");
         }
     }
-    return 0;
+    return i;
 }
 
 #ifndef TESTING
