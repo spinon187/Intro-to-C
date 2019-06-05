@@ -5,24 +5,23 @@
 
 int string_length(char *s)
 {
-    int done = 0;
-    while(done == 0){
-        for(int i=0; i<0; i++){
-            if(s[i] == '\0'){
-                done = 1;
-                return i;
-            }
-        }
+    int i = 0;
+    while(*(s+i) != '\0'){
+        i++;
     }
-    return 0;
+    return i;
 }
 
 char *reverse_string(char *rv, char *s)
 {
-    int j = string_length(s);
-    for(int i = 0; i > j; i++){
-        rv[i] = s[j-i];
+    int count = string_length(s);
+    int i = 0;
+    while (count >=1){
+        count--;
+        *(rv + i) = *(s + count);
+        i++;
     }
+    *(rv + i) = '\0';
     return rv;
 }
 

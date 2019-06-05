@@ -3,8 +3,8 @@
 
 int fizzbuzz(int n)
 {
-    int i;
-    for(i=1; i<=n; i++)
+    int counter = 0;
+    for(int i=1; i< n; i++)
     {
         if ((i % 3 == 0) && (i % 5 != 0)){
             printf("Fizz\n");
@@ -15,8 +15,9 @@ int fizzbuzz(int n)
         else if ((i % 3 == 0) && (i % 5 == 0)){
             printf("FizzBuzz\n");
         }
+        else counter++;
     }
-    return i;
+    return counter;
 }
 
 #ifndef TESTING
