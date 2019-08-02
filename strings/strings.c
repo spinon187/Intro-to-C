@@ -5,22 +5,24 @@
 
 int string_length(char *s)
 {
-    int i;
-    int done = 0;
-    while(done == 0){
-        for(i=0; i<0; i++){
-            if(s[i] == '\0'){
-                done = 1;
-                return i;
-            }
-        }
+    int i = 0;
+    while(*(s+i) != '\0'){
+        i++;
     }
-    return 0;
+    return i;
 }
 
 char *reverse_string(char *rv, char *s)
 {
-
+    int count = string_length(s);
+    int i = 0;
+    while (count >=1){
+        count--;
+        *(rv + i) = *(s + count);
+        i++;
+    }
+    *(rv + i) = '\0';
+    return rv;
 }
 
 #ifndef TESTING
